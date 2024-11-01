@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Display</title>
+</head>
+<body style="background-color: black; color: bisque;">
+    <h1>Submit Data</h1>
+    <form id="dataForm">
+        <input type="text" name="data" placeholder="Enter name" required>
+        <input type="text" name="data2" placeholder="Enter subject" required>
+        <input type="text" name="data3" placeholder="Enter grade" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <button id="showTableBtn">Show Table</button>
+    <table id="dataTable"  style="display:none;border:1px;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+
+    <script src="../script.js"></script>
+</body>
+</html>
